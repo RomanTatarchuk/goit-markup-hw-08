@@ -1573,6 +1573,14 @@ input [type="email"]::-moz-placeholder {
   height: 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 /* Чем мы занимаемся */
 .work {
   display: none;
@@ -1765,7 +1773,6 @@ input [type="email"]::-moz-placeholder {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 1;
-  overflow-y: scroll;
 }
 
 .is-hidden {

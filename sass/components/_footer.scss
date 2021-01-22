@@ -305,3 +305,9 @@ input [type="email"]::-moz-placeholder {
     height: 24px;
   }
 }
+
+.footer__form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
