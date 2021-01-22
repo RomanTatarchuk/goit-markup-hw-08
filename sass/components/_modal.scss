@@ -173,6 +173,7 @@ textarea[name="comment"]::-moz-placeholder {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  padding-left: 20px;
 }
 
 .lable-checkbox {
@@ -208,28 +209,41 @@ textarea[name="comment"]::-moz-placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 14px;
   letter-spacing: 0.03em;
   color: $text-color-grey;
-  padding-left: 8px;
+  padding-left: 3px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 24px;
+    padding-left: 8px;
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 24px;
+    padding-left: 8px;
   }
 }
 
 .checkbox-link {
   padding-left: 5px;
+  padding-right: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 14px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: $accent-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;
